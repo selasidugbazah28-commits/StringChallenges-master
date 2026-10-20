@@ -22,8 +22,7 @@ public class D_PasswordValidator {
 
     public boolean isValidPassword(String password) {
         /* TODO: your code goes here */
-        boolean hasUppercase = false;
-        boolean hasNumber = false;
+        boolean hasUppercase = password.contains("A");
 
         return true; // this is a temporary return to avoid errors
     }
