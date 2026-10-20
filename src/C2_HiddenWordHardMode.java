@@ -30,6 +30,13 @@ public class C2_HiddenWordHardMode {
                 String line = scanner.nextLine();
                 /* TODO: your code goes here */
 
+                int start = line.indexOf("*");
+                while (start != -1) {
+                    int end = line.indexOf("~", start);
+                    System.out.println(" Hidden word:  " + line.substring(start, end));
+                    start = line.indexOf("*", end);
+                }
+                System.out.println();
             }
             scanner.close();
         } catch (FileNotFoundException e) {
